@@ -175,9 +175,8 @@
   }
 
   .imac .button {
-    width: 80%;
-    height: auto;
-    padding: 10px;
+    width: =90%;
+    max-width: 200px;
   }
 
   .imac .ABOUT-wrapper {
@@ -192,5 +191,14 @@
   .imac .ABOUT {
     font-size: 20px;
     letter-spacing: 2px;
+  }
+
+@media screen and (max-width: 768px) {
+  .imac .text-wrapper,
+  .imac .BLOG,
+  .imac .WORKS,
+  .imac .contact {
+    font-size: 14px;
+    letter-spacing: 1px;
   }
 }
