@@ -142,3 +142,55 @@
   line-height: 26.4px;
   white-space: nowrap;
 }
+
+/* 📱 手機尺寸以下響應式調整 */
+@media screen and (max-width: 768px) {
+  .imac .overlap-group-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .imac .overlap-group {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imac .rectangle {
+    position: relative;
+    height: auto;
+  }
+
+  .imac .sharp-button-default {
+    position: relative;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .imac .button {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .imac .ABOUT-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .imac .ABOUT {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
