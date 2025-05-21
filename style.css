@@ -26,6 +26,7 @@
   top: 0;
   left: 0;
   background-color: #bcb6b6;
+  box-shadow: 0px 4px 4px #00000040;
 }
 
 .imac .sharp-button-default {
@@ -141,64 +142,4 @@
   letter-spacing: 3.84px;
   line-height: 26.4px;
   white-space: nowrap;
-}
-
-/* 📱 手機尺寸以下響應式調整 */
-@media screen and (max-width: 768px) {
-  .imac .overlap-group-wrapper {
-    width: 100%;
-    height: auto;
-  }
-
-  .imac .overlap-group {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .imac .rectangle {
-    position: relative;
-    height: auto;
-  }
-
-  .imac .sharp-button-default {
-    position: relative;
-    top: 0;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 0;
-  }
-
-  .imac .button {
-    width: =90%;
-    max-width: 200px;
-  }
-
-  .imac .ABOUT-wrapper {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    justify-content: center;
-    padding: 10px;
-  }
-
-  .imac .ABOUT {
-    font-size: 20px;
-    letter-spacing: 2px;
-  }
-
-@media screen and (max-width: 768px) {
-  .imac .text-wrapper,
-  .imac .BLOG,
-  .imac .WORKS,
-  .imac .contact {
-    font-size: 14px;
-    letter-spacing: 1px;
-  }
 }
