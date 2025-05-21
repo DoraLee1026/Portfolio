@@ -1,68 +1,144 @@
-/* Reset & 全域設定 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
+.imac {
   background-color: #ffffff;
-  color: #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }
 
-/* 導覽列 */
-.navbar {
+.imac .overlap-group-wrapper {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1280px;
+  height: 720px;
+}
+
+.imac .overlap-group {
+  position: relative;
+  width: 1286px;
+  height: 105px;
+}
+
+.imac .rectangle {
+  position: absolute;
+  width: 1280px;
+  height: 105px;
+  top: 0;
+  left: 0;
+  background-color: #bcb6b6;
+}
+
+.imac .sharp-button-default {
   display: flex;
-  justify-content: space-between;
+  width: 493px;
+  height: 100px;
   align-items: center;
-  background-color: #bcb7b7;
-  padding: 20px 40px;
+  gap: 20px;
+  position: absolute;
+  top: 5px;
+  left: 793px;
 }
 
-/* 左邊標題 Logo */
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-/* 導覽連結按鈕 */
-.nav-links {
+.imac .button {
+  all: unset;
+  box-sizing: border-box;
   display: flex;
-  gap: 15px;
+  width: 100px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 20px 32px;
+  position: relative;
+  border: 1px solid;
+  border-color: #000000;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: black;
-  border: 1px solid black;
-  padding: 10px 20px;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
+.imac .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.50px;
+  margin-left: -4.50px;
+  margin-right: -4.50px;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 700;
+  color: #161515;
+  font-size: 10px;
+  letter-spacing: 1.60px;
+  line-height: 11.0px;
+  white-space: nowrap;
 }
 
-.nav-links a:hover {
-  background-color: black;
-  color: white;
+.imac .BLOG {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.50px;
+  margin-left: -6.00px;
+  margin-right: -6.00px;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 700;
+  color: #161515;
+  font-size: 10px;
+  letter-spacing: 1.60px;
+  line-height: 11.0px;
+  white-space: nowrap;
 }
 
-/* 響應式處理（手機） */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.imac .WORKS {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.50px;
+  margin-left: -0.50px;
+  margin-right: -0.50px;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 700;
+  color: #161515;
+  font-size: 10px;
+  letter-spacing: 1.60px;
+  line-height: 11.0px;
+  white-space: nowrap;
+}
 
-  .nav-links {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-    margin-top: 10px;
-  }
+.imac .contact {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.50px;
+  margin-left: -12.50px;
+  margin-right: -12.50px;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 700;
+  color: #161515;
+  font-size: 10px;
+  letter-spacing: 1.60px;
+  line-height: 11.0px;
+  white-space: nowrap;
+}
 
-  .nav-links a {
-    width: 100%;
-    text-align: center;
-  }
+.imac .ABOUT-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  width: 200px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 20px 32px;
+  position: absolute;
+  top: 20px;
+  left: 38px;
+}
+
+.imac .ABOUT {
+  position: relative;
+  width: fit-content;
+  margin-left: -21.50px;
+  margin-right: -21.50px;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 700;
+  color: #161515;
+  font-size: 24px;
+  letter-spacing: 3.84px;
+  line-height: 26.4px;
+  white-space: nowrap;
 }
